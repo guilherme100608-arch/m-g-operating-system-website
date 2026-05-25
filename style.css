@@ -508,7 +508,7 @@ footer {
 
 .unix-card {
     background: #0f172a;
-    color: #e2e8f0;
+    color: #101010;
     border: 1px solid #1e293b;
 }
 
@@ -1498,7 +1498,7 @@ body{
     margin:8px 0;
 }
 
-/
+
 footer{
     text-align:center;
     padding:20px;
