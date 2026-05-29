@@ -1,0 +1,164 @@
+/* Estilo Web Retrô / Anos 90 */
+
+body {
+    background-color: #008080; /* A clássica cor verde-azulada do fundo do Windows 95 */
+    font-family: "MS Sans Serif", "Courier New", monospace;
+    color: #000000;
+    margin: 20px;
+    padding: 0;
+}
+
+/* Container principal simulando uma janela de sistema operacional antigo */
+main, #hometitle {
+    background-color: #c0c0c0; /* Cinza claro clássico */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-top: 3px solid #ffffff;
+    border-left: 3px solid #ffffff;
+    border-right: 3px solid #808080;
+    border-bottom: 3px solid #808080;
+    box-shadow: 2px 2px 0px #000000;
+}
+
+/* Barras de título das seções */
+h1, h3 {
+    background: linear-gradient(90deg, #000080, #1084d0); /* Azul escuro degradê do Windows */
+    color: #ffffff;
+    padding: 4px 8px;
+    margin-top: 0;
+    font-size: 1.4em;
+    border-bottom: 2px solid #808080;
+}
+
+h2 {
+    font-size: 1em;
+    color: #404040;
+    margin-bottom: 15px;
+}
+
+/* Links em formato de botões cinzas antigos ou texto clássico */
+a {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #800080;
+}
+
+/* Menu de Navegação estilizado como botões de barra de ferramentas */
+nav {
+    background-color: #c0c0c0;
+    padding: 5px;
+    border: 2px inset #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* NOVO ESTILO DOS BOTÕES RETRÔ (Funciona no menu e na página About) */
+nav a, a.link {
+    display: inline-block;
+    padding: 4px 10px;
+    margin: 4px 2px; /* Adiciona um pequeno espaçamento entre os botões na página about */
+    background-color: #c0c0c0;
+    color: #000000 !important;
+    text-decoration: none !important;
+    font-family: "MS Sans Serif", "Courier New", monospace;
+    font-size: 0.9em;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #808080;
+    border-bottom: 2px solid #808080;
+}
+
+/* Efeito de clique/hover nos botões */
+nav a:hover, a.link:hover {
+    background-color: #e0e0e0;
+    border-top: 2px solid #808080;
+    border-left: 2px solid #808080;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* Divisores de seção estilo ranhura na placa */
+hr {
+    border: 1px inset #ffffff;
+    border-top: 1px solid #808080;
+}
+
+/* Caixas de texto de cada Sistema Operacional */
+section {
+    background: #ffffff;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px inset #ffffff;
+    box-shadow: inset 1px 1px 2px #808080;
+}
+
+section h3 {
+    background: #808080; /* Título cinza para subseções */
+    font-size: 1.1em;
+}
+
+/* Imagens retro com borda simulando carregamento antigo */
+img {
+    border: 3px solid #808080;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+/* Atualize o início daquela regra no seu CSS para incluir o botão */
+nav a, a.link, button.link {
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: #c0c0c0;
+    color: #000000 !important;
+    text-decoration: none !important;
+    font-family: "MS Sans Serif", "Courier New", monospace;
+    font-size: 0.9em;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #808080;
+    border-bottom: 2px solid #808080;
+    cursor: pointer; /* Faz o ponteiro do mouse virar a mãozinha */
+}
+
+/* Adicione o hover para o botão também */
+nav a:hover, a.link:hover, button.link:hover {
+    background-color: #e0e0e0;
+    border-top: 2px solid #808080;
+    border-left: 2px solid #808080;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* Estilo do Rodapé Retrô / Barra de Status */
+.rodape-retro {
+    background-color: #c0c0c0; /* Cinza clássico */
+    padding: 2px;
+    margin-top: 20px;
+    display: flex;
+    gap: 4px;
+    border-top: 2px solid #808080; /* Linha superior escura para dar profundidade */
+}
+
+/* Campos divididos dentro da barra de status */
+.status-bar-field {
+    background-color: #c0c0c0;
+    padding: 3px 6px;
+    font-family: "MS Sans Serif", "Courier New", monospace;
+    font-size: 0.85em;
+    color: #000000;
+    
+    /* Efeito de ranhura para parecer "afundado" na barra */
+    border-top: 2px solid #808080;
+    border-left: 2px solid #808080;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* Faz o campo do meio (ou o que você desejar) esticar para ocupar o espaço */
+.status-bar-field:nth-child(2) {
+    flex-grow: 1;
+}
